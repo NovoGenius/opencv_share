@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>william Machine Learning App</title>
+<!--        css渲染-->
+        <style type="text/css">
+            body{
+<!--            background-image:url(https://cdn.kkguan.com/6b/02/6b02404d8f58f38615a29fecad5e7f40.lnkkHH);-->
+
+            }
+
+
+            h2{
+            background-image:url(https://cdn.kkguan.com/6b/02/6b02404d8f58f38615a29fecad5e7f40.lnkkHH);
+            background-repeat:repeat-y;
+            color:#F0FFFF;
+            font-size:60px;
+            text-align:center;
+            font-style:italic;
+            }
+
+
+            h5{
+            background-image:url(https://cdn.kkguan.com/6b/02/6b02404d8f58f38615a29fecad5e7f40.lnkkHH);
+            background-repeat:repeat-y;
+            text-align:center;
+            color:red;
+            font-size:20px;
+            }
+
+
+            h4{
+            background-image:url(https://cdn.kkguan.com/6b/02/6b02404d8f58f38615a29fecad5e7f40.lnkkHH);
+            background-repeat:repeat-y;
+
+            text-align:center;
+            font-size:25px;
+            color:#F0FFFF}
+
+            label{
+            text-align:center;
+            font-weight:bolder;
+            font-size:25px;
+            color:red}
+
+
+
+        </style>
+    </head>
+    <body>
+    <h2>欢迎来到SPS系统-品类规划项目 </h2>
+    <h4>各个特征参数标准参考：</h4>
+
+
+    <h5>
+        <br>年龄系数：
+        <p>18-:1 &nbsp;&nbsp;&nbsp; 18-25:2 &nbsp;&nbsp;&nbsp;  25-35:3&nbsp;&nbsp;&nbsp;   35+:4</p>
+        <br>性别系数：
+        <p>女性：0 &nbsp;&nbsp;&nbsp;   男性：1</p>
+        <br>竞争系数：
+        <p></p>超市个数为一时：1  &nbsp;&nbsp;&nbsp;  超市个数为二时：2  &nbsp;&nbsp;&nbsp; 超市个数为三个以上时：3
+        <br>收入系数：
+        <p></p>月收入3000以下：1  &nbsp;&nbsp;&nbsp;  月收入3000-7000：2 &nbsp;&nbsp;&nbsp; 月收入7000以上：3
+        <br>家庭系数：
+        <p></p>家庭比例小：0   &nbsp;&nbsp;&nbsp; 家庭比例大：1
+    </h5>
+
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            <label>Gender:</label> <input type="number" name="gender", placeholder="Enter height in 0/1" required/>
+            <br><br>
+            <label>Age:</label> <input type="number" name="age", placeholder="Enter weight in 1/2/3" required/>
+            <br><br>
+            <label>Compete:</label> <input type="number" name="compete", placeholder="Enter weight in 1/2/3" required/>
+            <br><br>
+            <label>Income:</label> <input type="number" name="income", placeholder="Enter weight in 1/2/3" required/>
+            <br><br>
+            <label>Home:</label> <input type="number" name="home", placeholder="Enter weight in 1/2/3" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>
